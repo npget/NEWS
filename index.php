@@ -9,21 +9,9 @@ $_SESSION['utentepublic']=session_id();
 <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
 
 <meta name="robots" content="index, follow"/>
-<script type="text/jacascript" async="" src="https://ssl.google-analytics.com/ga.js"></script>
-<script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-29528756-1']);
-  _gaq.push(['_trackPageview']);
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
 <?
-if($_GET['id']!=""){$title=$_GET['id'].'-'.$_GET['idsub'].'NovaprogetService.::.LETTORE-RSS.';}
+if($_GET['id']!=""){$title=$_GET['id'].'-'.$_GET['idsub'].':.LETTORE-RSS.';}
 else{$title="LETTORE RSS ON LINE";}
 $desc='Leggi le ultime notizie di :'.$_GET['id'].'-'.$_GET['idsub'].'.   reader. Aggregatore per feed rss   by NOVAPROGET.COM .';
 $tag='ANSA,ADNKRONOS,GOV,GREENPEACE,GIUSTIZIA,FEED,RSS,LAZIO,ROMA,ITALIA,NORD,SUD,WORD,SALUTE,BENESSERE,SERVIZI,PORTALE,EDILIZA,FOCUS,HEALTH';
@@ -88,7 +76,9 @@ $urlo="http://".$_SERVER["HTTP_HOST"].$_SERVER['REQUEST_URI'];
 	</a><a href="skype:novaproget?userinfo">
 <img src="http://mystatus.skype.com/smallclassic/novaproget" style="border:0;"  
 alt="My status"></a></div>
-<? include '../novasocial.php';?>
+<?
+// thisisi the file external. 
+include '../novasocial.php';?>
 <em style='top: -29px;position:relative;float:left;background-color:#fff;color:black;
 left: 16px;font-size:11px;'>Le informazioni provengono da domini pubblici e le anteprime delle attività sociali possono variare rispetto alle tipologie . </em>
 
